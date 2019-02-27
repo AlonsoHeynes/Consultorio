@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dr. Roberto | Antibióticos</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cálculo de dosis para Antibióticos</h1>
+      <form action="" id="miFormulario">
+        <label for="Antiobiotico">Antibiótico:</label>
+          <select id="antibioticos">
+            <option value="amoxi-acidoClav">Amoxicilina con ácido clavulánico</option>
+            <option value="amoxi-susp">Amoxicilina suspención</option>
+            <option value="ampici">Ampicilina</option>
+            <option value="azitro">Azitromicina suspención</option>
+            <option value="cefaclor">Cefaclor suspención</option>
+            <option value="cefadro">Cefadroxilo suspención</option>
+            <option value="cefale">Cefalexina</option>
+            <option value="cefuro">Cefuroxina</option>
+            <option value="claritro">Claritromicina suspención</option>
+            <option value="eritro">Eritromicina suspención</option>
+          </select>
+
+        <div class="seccionDatos">
+          <label for="dosis">Dosis:</label>
+          <input type="text" name="dosis" id="dosis" autocomplete="off" placeholder="mg">
+          <label for="peso">Peso:</label>
+          <input type="text" name="peso" id="peso" autocomplete="off" placeholder="Kg">
+          <label for="veces-por-dia">Veces al día:</label>
+          <input type="text" name="veces-por-dia" id="veces-por-dia" autocomplete="off" placeholder="1 / 2 / 3 / 4">
+          <label for="suspensionMg">Suspensión de:</label>
+          <input type="text" name="suspensionMg" id="suspensionMg" autocomplete="off" placeholder="mg">
+          <input type="text" name="suspensionMl" id="suspensionMl" autocomplete="off" placeholder="ml">
+          <div id="resultado"></div>
+        </div>
+
+        <button type="button" name="botonCalcular" id="botonCalcular">Calcular</button>
+        <button type="button" name="botonBorrar" id="botonBorrar">Borrar</button>
+      </form>
+  </div>
+
+
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
